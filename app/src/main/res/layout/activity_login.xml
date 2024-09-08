@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    tools:context=".ui.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:layout_width="@dimen/_65sdp"
+            android:layout_height="@dimen/_65sdp"
+            android:src="@drawable/icon"
+            />
+
+        <TextView
+            android:id="@+id/appNmeText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="@string/app_name"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_15sdp"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edEmail"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Email"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/edPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Number of Available Rooms"
+                android:textColorHint="@color/gray"
+                android:inputType="text"
+                />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/white"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                />
+            <TextView
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text = "SignUp"
+                android:gravity="right"
+                android:layout_marginEnd="@dimen/_17sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:fontFamily="@font/poppins"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="Created By Kuwar Vikal Singh"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:textSize="@dimen/_9sdp"/>
+
+
+</RelativeLayout>

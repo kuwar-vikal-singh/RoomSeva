@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="baseColor">#232223</color>
+    <color name="green">#11c13d</color>
+    <color name="red">#d33658</color>
+    <color name="gray">#3f3e3e</color>
+
+
+
+    <string name="appName">RoomSeva</string>
+
+</resources>

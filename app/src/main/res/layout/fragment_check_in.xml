@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_20sdp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/gray"
+                android:text="Customer Detail"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_10sdp"
+                />
+
+            <EditText
+                android:id="@+id/edCustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:hint="Customer Name"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="textPersonName"
+                />
+            <EditText
+                android:id="@+id/edCustomerAadhar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:hint="Aadhar Number"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="number"
+                android:maxLength="12"
+                />
+
+            <LinearLayout
+                android:id="@+id/timeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edit_text_bg"
+                android:gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/timePicker"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date And Time"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    />
+                <ImageView
+                    android:id="@+id/dateTimePickerButton"
+                    android:layout_width="@dimen/_46sdp"
+                    android:layout_height="@dimen/_34sdp"
+                    android:src="@drawable/calender"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:padding="@dimen/_2sdp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edCustomerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:hint="Phone Number"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="phone"
+                android:maxLength="10"
+                />
+            <EditText
+                android:id="@+id/edCustomerRoomNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                android:gravity="center"
+                android:hint="Room No"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/edit_text_bg"
+                android:inputType="number"
+                android:maxLength="10"
+                />
+
+            <Button
+                android:id="@+id/CustomercheckInBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/button_bg"
+                android:text="Check In"
+                android:fontFamily="@font/poppins"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baseColor"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.SignUpActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_65sdp"
+        android:layout_height="@dimen/_65sdp"
+        android:src="@drawable/icon"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/_35sdp"/>
+
+    <TextView
+        android:id="@+id/appNmeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins"
+        android:textSize="@dimen/_15sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        android:layout_below="@id/appNmeText"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <LinearLayout
+            android:id="@+id/lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/inputNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Name"
+                android:textColorHint="@color/gray"
+                android:inputType="textPersonName"
+                />
+            <EditText
+                android:id="@+id/inputHotelNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Hotel Name"
+                android:textColorHint="@color/gray"
+                android:inputType="textPersonName"
+                />
+            <EditText
+                android:id="@+id/inputEmailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Email"
+                android:textColorHint="@color/gray"
+                android:inputType="textEmailAddress"
+                />
+
+            <EditText
+                android:id="@+id/inputPassEditText"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Password"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/inputAvlRoomEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_bg"
+                android:layout_margin="@dimen/_12sdp"
+                android:padding="@dimen/_10sdp"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:hint="Enter Number of Available Rooms"
+                android:textColorHint="@color/gray"
+                android:inputType="number"
+                />
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/button_bg"
+                android:textColor="@color/white"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_12sdp"
+                />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
